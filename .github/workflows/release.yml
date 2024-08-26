@@ -29,6 +29,7 @@ jobs:
           revision: ${{ env.revision }}
       - name: Generate environmental variables
         run: |
+          echo "===== target: ${target}, edition: ${edition} revision: ${revision}====="
       - name: Create release
         id: release
         uses: softprops/action-gh-release@v2
