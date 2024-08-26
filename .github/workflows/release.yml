@@ -22,7 +22,7 @@ jobs:
           echo "revision=${VERSION#*-}" >> $GITHUB_ENV
           echo "tag_name=${VERSION}" >> $GITHUB_ENV
       - name: Build
-        uses: nascs/bsp@main
+        uses: nascs/bsp@build_test
         with:
           target: linux
           edition: rockchip
